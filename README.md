@@ -29,9 +29,6 @@ test should exercise the processing logic independently of the WebSocket.
 You may edit `consumer.py` and add tests. Do not edit `mock_feed.py` or weaken
 the supplied test.
 
-You may use Python documentation. Please do not use AI assistance. Be prepared
-to explain your reasoning and how you would operate this service in production.
-
 ## Message contract
 
 Every frame is a JSON object with this shape:

@@ -13,12 +13,6 @@ COMPETITORS = ("red", "blue")
 
 
 class StatsProcessor:
-    """Process messages and produce final totals.
-
-    This starter implementation contains the production defect described in
-    the exercise. Keep the solution small and focused.
-    """
-
     def __init__(self) -> None:
         self.event_id: str | None = None
         self.totals = {
