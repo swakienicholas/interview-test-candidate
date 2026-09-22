@@ -52,7 +52,6 @@ async def consume_feed(url: str) -> dict[str, Any]:
     async with connect(url) as websocket:
         async for raw_message in websocket:
             message = json.loads(raw_message)
-            print(json.dumps(message))
             processor.apply(message)
             
             # TODO: stop processing when the logical event has ended.
